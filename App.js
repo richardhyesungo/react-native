@@ -12,6 +12,14 @@ import {
   SafeAreaView,
 } from "react-native";
 import TypeScript from "./components/TypeScript.tsx";
+// import axios from "axios";
+fetch("https://pokeapi.co/api/v2/pokemon/ditto")
+  .then((response) => {
+    return response.json();
+  })
+  .then((json) => {
+    console.log("json", json);
+  });
 
 const image = { uri: "https://reactnative.dev/img/tiny_logo.png" };
 
